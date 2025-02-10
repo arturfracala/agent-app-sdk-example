@@ -7,8 +7,8 @@ This project is a **Next.js** application integrated with LiveChat as a **Fullsc
 1. **Clone the repository:**
 
    ```bash
-   git clone <REPOSITORY_URL>
-   cd <FOLDER_NAME>
+   git clone https://github.com/arturfracala/agent-app-sdk-example
+   cd agent-app-sdk-example
    ```
 
 2. **Install dependencies:**
