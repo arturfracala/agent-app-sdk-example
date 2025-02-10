@@ -10,21 +10,21 @@ function randomIntFromInterval(min, max) {
 const NotificationBadgeController = () => {
   const context = useLiveChatFullscreen();
 
-  const handleClick = async () => {
+  const handleSetNotification = async () => {
     const count = randomIntFromInterval(1, 6);
     await context?.widget?.setNotificationBadge(count);
   };
 
-  const handleClickX = async () => {
+  const handleClearNotification = async () => {
     await context?.widget?.setNotificationBadge(0);
   };
 
   return (
     <div className="flex gap-4">
-      <Button onClick={handleClick} kind="primary">
+      <Button onClick={handleSetNotification} kind="primary">
         set notification
       </Button>
-      <Button onClick={handleClickX} kind="secondary">
+      <Button onClick={handleClearNotification} kind="secondary">
         clear notification
       </Button>
     </div>
